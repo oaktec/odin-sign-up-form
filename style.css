@@ -15,17 +15,103 @@ body {
 }
 
 body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
     display: flex;
 }
 
 .main-container {
-    background-color: #999999;
-
     flex: 2;
 }
 
+.form-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .top-container {
-    background-color: rgb(184, 124, 124);
+    background-color: #F9FAFC;
+    font-size: 2.1rem;
+    font-weight: 550;
+    padding: 60px;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 2.1rem;
+}
+
+.top-main {
+    max-width: 80%;
+}
+
+.inputs-container {
+    height: 400px;
+    padding-left: 60px;
+    font-size: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.double-input-row {
+    gap:2rem;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+}
+
+.input-container label {
+    font-size: 1rem;
+    letter-spacing: 2px;
+
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    width: 250px;
+}
+
+.input-container input {
+    font-size: 20px;
+    padding: 4px;
+    height: 32px;
+    border: solid 3px #E5E7EB;
+    border-radius: 4px;
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #F9FAFC;
+    background-color: #596D48;
+    padding: 16px 36px;
+}
+
+.submit-container {
+    background-color: #F9FAFC;
+    padding: 30px 60px;
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.1rem;
+}
+
+.submit-container div {
+    font-size: 1.2rem;
+}
+
+.submit-container a {
+    text-decoration: none;
+    font-weight: 550;
+    color: #596D48;
 }
 
 .bg-container {
