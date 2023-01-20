@@ -24,13 +24,30 @@ body {
     flex: 2;
 }
 
+.top-container {
+    background-color: rgb(184, 124, 124);
+}
+
 .bg-container {
     background-image: url("./img/background.jpg");
     background-size: cover;
     background-position: 50% 50%;
+    color: #FFFFFF;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 500px;
     flex: 1;
+}
+
+.bg-footer {
+    align-self: center;
+    margin-bottom: 8px;
+}
+
+.bg-footer a {
+    color:#FFFFFF;
 }
 
 .logo-container {
@@ -42,7 +59,6 @@ body {
     padding: 16px;
 
     display: flex;
-    flex: 1;
     justify-content: center;
     align-items: center;
     height: 20%;
