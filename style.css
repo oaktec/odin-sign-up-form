@@ -50,6 +50,7 @@ body {
 .inputs-container {
     height: 400px;
     padding-left: 60px;
+    padding-bottom: 20px;
     font-size: 2rem;
 
     display: flex;
@@ -70,7 +71,7 @@ body {
     letter-spacing: 2px;
 
     display: flex;
-    gap: 4px;
+    gap: 6px;
     flex-direction: column;
     width: 250px;
 }
@@ -78,7 +79,7 @@ body {
 .input-container input {
     font-size: 20px;
     padding: 4px;
-    height: 32px;
+    height: 36px;
     border: solid 3px #E5E7EB;
     border-radius: 4px;
 }
