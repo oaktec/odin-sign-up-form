@@ -91,7 +91,8 @@ body {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.input-container input.pw-error {
+.input-container input.pw-error,
+.input-container input:invalid:not(:focus):not(:placeholder-shown) {
     border: solid 3px red;
 }
 .input-container span.pw-error-container {
