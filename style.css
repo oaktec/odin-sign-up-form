@@ -74,6 +74,7 @@ body {
     gap: 6px;
     flex-direction: column;
     width: 250px;
+    position:relative;
 }
 
 .input-container input {
@@ -84,6 +85,25 @@ body {
     border-radius: 4px;
 }
 
+.input-container input:focus {
+    outline: none;
+    border: solid 3px #72A0C1;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.input-container input.pw-error {
+    border: solid 3px red;
+}
+.input-container span.pw-error-container {
+    position: absolute;
+    top: 60px;
+}
+.input-container span.pw-error::after {
+    font-size: 14px;
+    color:red;
+    content: "*passwords must match";
+}
+
 button {
     border: none;
     border-radius: 12px;
@@ -92,6 +112,7 @@ button {
     color: #F9FAFC;
     background-color: #596D48;
     padding: 16px 36px;
+    cursor: pointer;
 }
 
 .submit-container {
